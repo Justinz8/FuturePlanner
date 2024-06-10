@@ -1,0 +1,14 @@
+.FilterButtonUTSC {
+    background-color: var(--SecondaryColor);
+    margin-top: 10px;
+    border: none;
+    width: 40%;
+    min-height: 25px;
+    border-radius: 4rem;
+}
+
+.FilterButtonUTSC:hover{
+    cursor: pointer;
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+}

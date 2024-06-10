@@ -1,0 +1,175 @@
+.CourseCard{
+    width: calc(var(--TimeTableCardWidth) - 2px);
+    height: 110px;
+    position: relative;
+    background-color: var(--GrayColor);
+    border: 1px solid black;
+    margin: 0px auto 10px auto;
+}
+
+.CourseCard-Body{
+    width: calc(100% - 12px);
+    height: 100%;
+    padding: 6px;
+    font-family: 'Inter', sans-serif;
+}
+
+.CourseCard-Buttons-Wrapper{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    display: flex;
+}
+
+.CourseCard-Button-Wrapper{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    margin-right: 2px;
+}
+
+.CourseCard-Info-Circle{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #bdbdbd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+    color: #bdbdbd;
+}
+
+.CourseCard-Info-Circle:hover{
+    transform: translate(calc(-50% - 2px), calc(-50% + 2px));
+    color: rgb(61, 168, 255);
+    border: 1px solid rgb(61, 168, 255);
+}
+
+.CourseCard-Info-Circle p{
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+}
+
+.CourseCard-Delete{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.CourseCard-Delete:hover::before, .CourseCard-Delete:hover::after{
+    background-color: #e83f50ff;
+    top: 10px;
+    right: 1px;
+}
+
+.CourseCard-Delete::before, .CourseCard-Delete::after{
+    content: "";
+    background-color: var(--DarkColor);
+    transition: 0.2s;
+    width: 20px;
+    height: 2px;
+    rotate: 45deg;
+    position: absolute;
+    top: 9px;
+    right: 0;
+}
+
+.CourseCard-Delete::after{
+    rotate: -45deg;
+}
+
+.CourseCard-CourseID-Wrapper{
+    position: relative;
+}
+
+.CourseCard-CourseID-Underline{
+    width: 130px;
+    height: 3px;
+    background-color: #D9D9D9;
+}
+
+
+.CourseCard-CourseID{
+    margin: 0;
+    font-weight: 600;
+}
+
+.CourseCard-CourseName{
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    width: calc(100% - 12px);
+    font-weight: 500;
+}
+
+.CourseCard-CourseCampus{
+    margin: 0;
+}
+
+.CourseCard-Prereqs{
+    margin: 5px 0 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    width: calc(100% - 12px);
+}
+
+.CourseCard-CourseOffering{
+    position: relative;
+
+    width: 73px;
+    height: 22px;
+    margin-right: 2px;
+    margin-top: 6px;
+
+    background: red;
+    border-radius: 24px;
+}
+
+.CourseCard-CourseOffering-Body{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CourseCard-Offerings-Wrapper{
+    display: flex;
+}
+
+.CourseCard-CourseOffering-Icon{
+    width: 17px;
+    height: 17px;
+    margin-right: 2px;
+}
+.CourseCard-CourseOffering-Title{
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.CourseCard-MoreInfo-SubPage{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.CourseCard-Description-Wrapper{
+    width: calc(100% - 12px);
+}

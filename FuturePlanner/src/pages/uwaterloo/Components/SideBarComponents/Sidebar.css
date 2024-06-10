@@ -1,0 +1,12 @@
+.SideBar{
+    width: 300px;
+    align-self: stretch;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    max-height: 100vh;
+}
+
+.SideBar-Content{
+    padding: 10px 0px 0px 0px;
+    overflow-y: auto;
+}

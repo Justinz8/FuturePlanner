@@ -1,0 +1,257 @@
+.TitleSection{
+    width: 100%;
+
+}
+
+.Title-Wrapper-UW{
+    background-color: var(--PrimaryUWColor);
+    clip-path: polygon(10% 0, 100% 0%, 89% 100%, 0% 100%);
+    width: fit-content;
+    padding: 10px 70px;
+}
+
+.Title-Wrapper-UW h1 {
+    color: var(--DarkUWColor);
+    font-family: 'inter', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.Planner-Options{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.Option-ButtonsUW > p{
+    font-family: 'Inter', sans-serif;
+    color: var(--DarkColor);
+    z-index: 1000;
+    position: relative;
+    transition: 0.5s;
+}
+
+.Option-ButtonsUW{
+    width: 225px;
+    height: 50px;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: var(--SecondaryUWColor);
+    overflow: hidden;
+    transition: 0.5s;
+    transition: width 0s;
+}
+
+.Option-ButtonsUW::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: var(--PrimaryUWColor);
+    z-index: 100;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* need to finish button styling */
+
+.Option-ButtonsUW:hover::before{
+    left: 0;
+}
+
+.Option-ButtonsUW:hover{
+    cursor: pointer;
+}
+
+.Option-ButtonsUW:hover > p{
+    color: var(--DarkUWColor);
+}
+
+.Option-Buttons-Wrapper{
+    display: flex;
+}
+
+.Save-Planner-Button{
+    margin: 0px 40px;
+}
+
+
+
+.Load-TimeTable-ListUW{
+    position: absolute;
+    left: 0;
+    min-height: 0px;
+    transition: 0.5s;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.Load-TimeTable-List-WrapperUW::-webkit-scrollbar{
+    width: 5px;
+    position: absolute;
+}
+
+.Load-TimeTable-List-WrapperUW::-webkit-scrollbar-thumb{
+    background-color: #d9d9d9;
+    border-radius: 10px;
+}
+
+.Load-Planner-Wrapper{
+    position: relative;
+}
+
+.Load-TimeTable-List-WrapperUW{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    overflow: hidden;
+    max-height: 300px;
+    z-index: 1100;
+}
+
+.Load-Planner-Button{
+    position: relative;
+    
+}
+
+.Load-TimeTable-Item{
+    list-style-type: none;
+    position: relative;
+}
+
+.Load-TimeTable-ButtonUW::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: var(--PrimaryUWColor);
+    z-index: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.Load-TimeTable-ButtonUW:hover::before{
+    left: 0;
+}
+
+.Load-TimeTable-ButtonUW{
+    background-color: var(--SecondaryUWColor);
+    border: 1px solid var(--DarkUWColor);
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
+
+.Load-TimeTable-ButtonUW > p{
+    position: relative;
+    z-index: 100;
+}
+
+.Load-TimeTable-ButtonUW:hover{
+    cursor: pointer;
+}
+
+.TimeTable-Title{
+    border: none;
+    border-bottom: 1px solid var(--DarkColor);
+    background: transparent;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    width: 600px;
+}
+
+.TimeTable-Title:focus{
+    outline: none;
+}
+
+
+
+.Delete-TimeTableSave{
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 10000;
+}
+
+.Delete-TimeTableSave-Cross{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.Delete-TimeTableSave:hover .Delete-TimeTableSave-Cross::before, .Delete-TimeTableSave:hover .Delete-TimeTableSave-Cross::after{
+    background-color: #e83f50ff;
+    top: 10px;
+    right: 1px;
+}
+
+.Delete-TimeTableSave-Cross::before, .Delete-TimeTableSave-Cross::after{
+    content: "";
+    background-color: var(--DarkColor);
+    transition: 0.2s;
+    width: 20px;
+    height: 2px;
+    rotate: 45deg;
+    position: absolute;
+    top: 9px;
+    right: 0;
+}
+
+.Delete-TimeTableSave-Cross::after{
+    rotate: -45deg;
+}
+
+@media screen and (max-width: 1500px) {
+    .TimeTable-Title{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .Option-ButtonsUW{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .Planner-Options{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .TimeTable-Title{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Title-Wrapper-UW{
+        clip-path: none;
+    }
+}
