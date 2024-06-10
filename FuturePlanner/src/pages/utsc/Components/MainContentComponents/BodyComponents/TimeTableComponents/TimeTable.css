@@ -1,0 +1,97 @@
+.TimeTable{
+    min-width: fit-content;
+    min-height: calc(100% - 40px);
+    width: calc(100% - 80px);
+    height: max-content;
+    margin: 20px 20px 20px 60px;
+    display: flex;
+}
+
+.TimeTable-Wrapper{
+    margin-top: 10px;
+    width: 100%;
+    overflow-x: auto;
+    height: 80vh;
+    border: 1px solid var(--DarkColor);
+}
+
+.AddTimeTable-Button-Circle{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border: 2px solid var(--TimeTableAddCardColor);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.AddTimeTable-Button-Circle::before, .AddTimeTable-Button-Circle::after{
+    width: 30px;
+    height: 2px;
+    background-color: var(--TimeTableAddCardColor);
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 50%;
+    transition: 0.3s;
+}
+
+.AddTimeTable-Button-Circle::after{
+    transform: translate(-50%, -50%);
+}
+
+.AddTimeTable-Button-Circle::before{
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+
+.AddTimeTable-Button-Plus{
+    font-size: 4rem;
+    color: var(--TimeTableAddCardColor);
+    transition: 0.3s;
+}
+
+.AddTimeTable-Button{
+    width: 260px;
+    align-self: stretch;
+    border: 2px solid var(--TimeTableAddCardColor);;
+    background-color: #00000000;
+    transition: 0.3s;
+}
+
+.AddTimeTable-Button:hover{
+    background-color: #0000003b;
+    cursor: pointer;
+}
+
+.AddTimeTable-Button:hover .AddTimeTable-Button-Circle::before, .AddTimeTable-Button:hover .AddTimeTable-Button-Circle::after{
+    background-color: var(--DarkColor);
+}
+
+.AddTimeTable-Button:hover .AddTimeTable-Button-Circle{
+    border: 2px solid var(--DarkColor);
+}
+
+.AddTimeTable-Button-Circle > h4{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    color: transparent;
+    text-wrap: nowrap;
+    width: max-content;
+    padding: 0;
+    margin: 0;
+    transform: translateX(50%) translateY(130%);
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    transition: 0.3s;
+}
+
+.AddTimeTable-Button:hover .AddTimeTable-Button-Circle > h4{
+    color: var(--DarkColor);
+}

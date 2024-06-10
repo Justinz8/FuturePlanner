@@ -1,0 +1,21 @@
+.About-Body{
+    font-family: 'Inter', sans-serif;
+    padding: 30px;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    background-color: rgba(255, 255, 255, 0.856);
+}
+
+.About-Wrapper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/LoginSignupBackground.png');
+}
+
+.About-Body a{
+    color: var(--DarkColor);
+}

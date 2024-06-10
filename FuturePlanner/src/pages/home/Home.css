@@ -1,0 +1,63 @@
+.Home-Body{
+    font-family: 'Inter', sans-serif;
+    padding: 30px;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    background-color: rgba(255, 255, 255, 0.856);
+}
+
+.Home-Wrapper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/LoginSignupBackground.png');
+}
+
+
+.Home-Title {
+    width: 100%;
+}
+
+.Home-Title p{
+    display: inline-block;
+    position:relative;
+    float: right;
+}
+
+.Home-Title h1{
+    margin: auto;
+    display: inline-block;   
+}
+
+.Release-Notes-Button {
+    background-color: #007FA3;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    width: 12%;
+    min-height: 30px;
+    border-radius: 4rem;
+}
+
+.Release-Notes-Button:hover{
+    cursor: pointer;
+    background-color: #25355A;
+}
+
+.Close-Button {
+    background-color: #007FA3;
+    border: none;
+    color: white;
+    margin: 30px;
+    width: 12%;
+    min-height: 30px;
+    border-radius: 4rem;
+}
+
+.Close-Button:hover{
+    cursor: pointer;
+    background-color: #25355A;
+}

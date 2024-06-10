@@ -1,0 +1,21 @@
+.StillThere-Body{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    
+    font-family: 'Inter', sans-serif;
+}
+
+.StillThere-Background{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 100000000000000000000000000000000000000000000000000000;
+    background-color: rgba(255, 255, 255, 0.705);
+}

@@ -1,0 +1,27 @@
+.Release-Notes-Body {
+    font-family: 'Inter', sans-serif;
+    padding: 30px;
+    width: 60%;
+    
+}
+
+.Release-Notes-Body h3{
+    margin-top: 0;
+}
+
+.Release-Notes-Body h4{
+    margin: 0;
+}
+
+.Version-Date {
+    margin: 0;
+}
+
+.Version-Notes {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.Release-Notes-Body ul {
+    margin: 10px;
+}

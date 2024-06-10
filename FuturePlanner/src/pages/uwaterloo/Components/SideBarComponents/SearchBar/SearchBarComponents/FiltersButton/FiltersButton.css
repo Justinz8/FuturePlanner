@@ -1,0 +1,14 @@
+.FilterButtonUW {
+    background-color: var(--PrimaryUWColor);
+    margin-top: 10px;
+    border: none;
+    width: 40%;
+    min-height: 25px;
+    border-radius: 4rem;
+}
+
+.FilterButtonUW:hover{
+    cursor: pointer;
+    background-color: var(--SecondaryUWColor);
+    border: 1px solid var(--DarkUWColor);
+}

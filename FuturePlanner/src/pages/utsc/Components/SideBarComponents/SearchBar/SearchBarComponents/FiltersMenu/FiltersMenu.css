@@ -1,0 +1,60 @@
+.FilterDiv {
+    text-align: center;
+}
+
+.FilterList {
+    padding: 0;
+    margin: 5px;
+    list-style: none;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.FilterList > li > button {
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 0;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+
+.SubjectSelectUTSC{
+    min-width: 50px;
+}
+
+.SubjectSelectUTSC select {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    font-size: 0.75rem;
+    padding: 0.4em 1em 0.4em 1em;
+    background-color: var(--SecondaryColor);
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 0.25rem;
+    color: var(--DarkUWColor);
+    cursor: pointer;
+}
+
+.YearSelectUTSC{
+    min-width: 50px;
+}
+
+.YearSelectUTSC select {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    font-size: 0.75rem;
+    padding: 0.4em 1em 0.4em 1em;
+    background-color: var(--SecondaryColor);
+    border: none;
+    margin-top: 5px;
+    
+    border-radius: 0.25rem;
+    color: var(--DarkUWColor);
+    cursor: pointer;
+}

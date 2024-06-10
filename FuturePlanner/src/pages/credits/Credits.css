@@ -1,0 +1,9 @@
+.credits{
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+    
+}
+
+.credits > p > a{
+    color: var(--DarkColor);
+}

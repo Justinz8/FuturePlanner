@@ -1,0 +1,78 @@
+.TimeTableCard{
+    width: var(--TimeTableCardWidth);
+    background-color: var(--PrimaryColor);
+    margin-right: 40px;
+    align-self: stretch;
+}
+
+.TimeTableCard-Header{
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    background-color: var(--SecondaryColor);
+}
+
+.TimeTableCard-Listener{
+    width: 70%;
+    height: 10px;
+    margin: auto;
+    position: relative;
+}
+
+.TimeTableCard-Listener>div{
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+}
+
+.TimeTableCard-Title{
+    padding: 0;
+    width: calc(100% - 4px);
+    text-align: center;
+    background: none;
+    border: none;
+    color: var(--BlackColor);
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.TimeTableCard-Delete-Wrapper{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.TimeTableCard-Delete{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.TimeTableCard-Delete:hover::before, .TimeTableCard-Delete:hover::after{
+    background-color: #e83f50ff;
+    top: 10px;
+    right: 1px;
+}
+
+.TimeTableCard-Delete::before, .TimeTableCard-Delete::after{
+    content: "";
+    background-color: var(--DarkColor);
+    transition: 0.2s;
+    width: 20px;
+    height: 2px;
+    rotate: 45deg;
+    position: absolute;
+    top: 9px;
+    right: 0;
+}
+
+.TimeTableCard-Delete::after{
+    rotate: -45deg;
+}
